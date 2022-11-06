@@ -5,7 +5,11 @@ const path = require('path');
 
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + '/index.html');
+  });
+
+  app.get("/quem-somos.html", (req, res) => {
+    res.sendFile(__dirname + "/quem-somos.html");
   });
   
 
