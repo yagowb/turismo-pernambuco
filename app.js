@@ -14,11 +14,5 @@ app.get("/", (req, res) => {
   
 
 //Inicialização do Servidor//
-app.listen(4000, function(erro){
-    if(erro){
-        console.log("Erro ao iniciar servidor");
-    }else{
-        console.log("Servidor iniciado com sucesso");
-    }
-})
+app.listen(process.env.PORT ?? 4000);
 
