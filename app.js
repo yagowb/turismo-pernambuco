@@ -3,10 +3,10 @@ const app = express();
 const path = require('path');
 
 
-function index(request, response, next) { 
-    response.send('/index.html'); 
-} 
-app.get("/", index);
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+  });
 
   app.get("/quem-somos.html", (req, res) => {
     res.sendFile(__dirname + "/quem-somos.html");
