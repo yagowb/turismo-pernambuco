@@ -13,7 +13,7 @@ class Contato {
 }
 
 
-let contatos = new Array(
+const contatos = new Array(
     new Contato("Pedrito", "email@bacana.com", "Quero ajuda"),
     new Contato("Joana", "joana@bol.com", "quero ajuda")
 )
