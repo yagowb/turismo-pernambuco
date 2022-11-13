@@ -10,8 +10,15 @@
     
     <h1>Contate-nos!</h1>
     <hr>
-    <form>
-        <input type="button">
+    <form action="/add" method="POST">
+        <p>Nome:</p>
+        <input type="text" name="nome">
+        <p>E-mail:</p>
+        <input type="text" name="email">
+        <p>Mensagem:</p>
+        <textarea name="Text1" cols="40" rows="5"></textarea>
+        <div><button type="submit">Cadastrar mensagem</button></div>
+        
     </form>
 </body>
 </html>

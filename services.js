@@ -13,4 +13,4 @@ const fazerOrcamento = (destino) => {
   return value
 }
 
-export default { fazerOrcamento }
+module.exports = { fazerOrcamento }

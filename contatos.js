@@ -27,3 +27,4 @@ app.post("/contato.html", (req,res) =>{
     contatos.push(new Contato(nome, email, mensagem));
 })
 
+module.exports = contatos;
