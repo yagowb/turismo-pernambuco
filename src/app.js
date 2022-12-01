@@ -8,22 +8,22 @@ const bodyParser = require('body-parser');
 app.use("/images", express.static(path.join(__dirname, '/images')));
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + '/src/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get("/quem-somos.html", function(req, res) {
-  res.sendFile(__dirname + "/src/quem-somos.html");
+  res.sendFile(__dirname + "/quem-somos.html");
 });
   
 app.get("/destinos.html", function(req, res)  {
-  res.sendFile(__dirname + "/src/destinos.html");
+  res.sendFile(__dirname + "/destinos.html");
 });
 
 
 
 //////////////ROTA DE CONTATO////////////////
 app.get("/contato.html", function(req,res) {
-  res.sendFile(__dirname + "/src/contato.html");
+  res.sendFile(__dirname + "/contato.html");
 })
 
 app.post("/add", function(req,res){
@@ -34,7 +34,7 @@ app.post("/add", function(req,res){
 //////////ROTA DE ORÇAMENTOS///////////////////
 
 app.get("/pacotes.html", function(req,res){
-  res.sendFile(__dirname + "/src/pacotes.html");
+  res.sendFile(__dirname + "/pacotes.html");
 })
 
 app.post("/orcamento", (req, res) => {
