@@ -1,17 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinos Turísticos em Pernambuco</title>
-</head>
-<body>
-    
-    <h1>Destinos Mais Desejados</h1>
-    <hr>
+<html>
+  <head>
+    <title>Destinos</title>
+   
+    <Script type="text/javascript" src="./map.js"></Script>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+            background: #ddd;
+        }
 
-    
+        h1, p {
+            text-align: center;
+            font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+            font-weight: 700;
+            color: Indigo;
+            text-shadow: 0.5px 0.2px 1px#000000;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Destinos mais Desejados</h1>
+    <p>Visualize as rotas dos destinos mais desejados da região!</p>
+    <div id="map"></div>
 
-</body>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsOgpuVI1aw5-kQlQ3MCCfnuusgn_guH4&callback=initMap" async defer>
+    </script>
+    <Script type="text/javascript" src="./map.js"></Script>
+  </body>
 </html>
