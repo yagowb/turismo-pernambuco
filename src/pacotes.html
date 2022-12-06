@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realize um orçamento conosco!</title>
+    <title>Selecione um pacote!</title>
 </head>
+    <style>
+        
+        h1{
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+            display:flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        button{
+            list-style: none;
+            display:flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+    </style>
 <body>
-    
+    <h1>
+        Viaje conosco!
+    </h1>
+    <ul>
+        <li>
+            <img src="./images/Olinda.jpg" width="250" height="200">
+            <button onclick="funcao1()"> Viaje para Olinda!</button>
+        </li>
+        <li>
+            <img src="./images/Praia de Carneiros.jpg" width="250" height="200">
+            <button onclick="funcao1()"> Viaje para Tamandaré!</button>
+        </li>
+        <li>
+            <img src="./images/Porto de Galinhas.jpg" width="250" height="200">
+            <button onclick="funcao1()"> Viaje para Porto de Galinhas! </button>
+        </li>
+    </ul>
+
 </body>
+    <script>
+    function funcao1()
+    {
+        prompt("Obrigado por selecinar esse pacote!")
+    }
+    </script>
 </html>
